@@ -1,0 +1,50 @@
+Inside the project directory, create a new file called manifest.json with the following contents:
+{
+  "manifest_version": 2,
+  "name": "My Chrome Extension",
+  "version": "1.0",
+  "description": "Description of your extension",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
+
+Replace "My Chrome Extension" with the desired name for your extension. Make sure you have an icon.png file in the project directory with the appropriate image for your extension's icon.
+Create a new file called popup.html with the following contents:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Extension Popup</title>
+  <style>
+    body {
+      width: 300px;
+      height: 150px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Extension Popup</h1>
+  <p>Content of the popup.</p>
+</body>
+</html>
+
+This file represents the HTML content that will be displayed when the extension's browser action button is clicked.
+
+Open Google Chrome and navigate to chrome://extensions/.
+
+Enable the "Developer mode" toggle in the top right corner.
+
+Click on the "Load unpacked" button and select your extension project directory.
+
+
